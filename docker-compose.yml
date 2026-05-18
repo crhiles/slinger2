@@ -5,6 +5,7 @@ services:
       - /volume1/docker/slinger2:/config:rw
     ports:
       - "65432:65432"
+    user: 1001:1001
     network_mode: host
     environment:
       - TZ=America/Regina
