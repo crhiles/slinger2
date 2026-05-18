@@ -1,0 +1,10 @@
+services:
+  slinger:
+    image: ghcr.io/crhiles/slinger2:v3.08f
+    volumes:
+      - /volume1/docker/slinger2:/config:rw
+    ports:
+      - "65432:65432"
+    network_mode: host
+    environment:
+      - TZ=America/Regina
