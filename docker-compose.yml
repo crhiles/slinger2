@@ -1,8 +1,8 @@
 services:
   slinger:
-    image: ghcr.io/crhiles/slinger2:v3.08f
+    image: ghcr.io/crhiles/slinger2:main
     volumes:
-      - /volume1/docker/slinger2:/config:rw
+      - /docker/volumes/slinger/config:/config:rw
     ports:
       - "65432:65432"
     user: 1001:1001
